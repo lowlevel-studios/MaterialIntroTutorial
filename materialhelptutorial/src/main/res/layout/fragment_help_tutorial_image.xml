@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -14,6 +13,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
         android:layout_alignParentBottom="true"
         android:layout_alignParentTop="false"
         android:layout_marginLeft="36dp"
@@ -22,7 +22,7 @@
         android:layout_marginBottom="16dp"
         android:fontFamily="sans-serif"
         android:padding="8dp"
-        android:textColor="@color/tutorial_subtitleTextColor"
+        android:textColor="@color/tutorial_subtitleText"
         android:textSize="16sp"
         tools:text="Line 2 of this description" />
 
@@ -32,12 +32,13 @@
         android:layout_height="wrap_content"
         android:layout_above="@id/fragment_help_tutorial_subtitle_text"
         android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
         android:layout_alignParentTop="false"
         android:autoLink="web"
         android:fontFamily="sans-serif"
         android:padding="8dp"
         android:layout_marginTop="8dp"
-        android:textColor="@color/tutorial_titleTextColor"
+        android:textColor="@color/tutorial_titleText"
         android:layout_marginLeft="36dp"
         android:layout_marginRight="36dp"
         android:textSize="24sp"
@@ -49,15 +50,19 @@
         android:layout_height="match_parent"
         android:layout_above="@id/fragment_help_tutorial_text"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
         android:layout_alignParentTop="true"
         android:scaleType="fitCenter" />
+
     <ImageView
         android:id="@+id/fragment_help_tutorial_imageview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/fragment_help_tutorial_text"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
         android:layout_alignParentTop="true"
-        tools:src="@drawable/ic_navigate_next"
-        android:scaleType="fitCenter" />
+        android:scaleType="fitCenter"
+        tools:src="@drawable/ic_navigate_next" />
+
 </RelativeLayout>

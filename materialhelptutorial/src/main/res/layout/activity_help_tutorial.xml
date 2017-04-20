@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
     android:id="@+id/activity_help_root"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
@@ -13,16 +12,14 @@
         android:clipChildren="false"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/linear_layout_indicator">
+        android:layout_above="@+id/linear_layout_indicator" />
 
-    </android.support.v4.view.ViewPager>
-
-    <View android:layout_width="match_parent"
-
-        android:layout_above="@+id/linear_layout_indicator"
+    <View
+        android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#E0E0E0"
-        />
+        android:layout_above="@+id/linear_layout_indicator"
+        android:background="@color/tutorial_separator" />
+
     <LinearLayout
         android:id="@+id/linear_layout_indicator"
         android:layout_width="match_parent"
@@ -35,13 +32,11 @@
             android:id="@+id/activity_help_skip_textview"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_alignParentBottom="true"
-            android:layout_centerInParent="true"
             style="@android:style/Widget.Holo.Button.Borderless"
             android:fontFamily="sans-serif"
             android:gravity="center"
             android:text="@string/tutorial_skip"
-            android:textColor="@color/tutorial_buttonTextColor"
+            android:textColor="@color/tutorial_buttonText"
             android:textSize="18sp"
             android:layout_weight="0.25" />
 
@@ -49,11 +44,10 @@
             android:id="@+id/activity_help_view_page_indicator"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_above="@id/activity_help_skip_textview"
+            android:layout_weight="0.5"
             app:fillColor="#41FFFFFF"
             app:pageColor="#14FFFFFF"
             app:radius="6dp"
-            android:layout_weight="0.5"
             app:strokeColor="#E0E0E0"
             app:strokeWidth="0dp"
             android:layout_gravity="center_vertical"
@@ -64,6 +58,7 @@
             android:layout_weight="0.25"
             android:orientation="vertical"
             android:layout_height="match_parent">
+
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -73,6 +68,7 @@
                 android:layout_margin="8dp"
                 android:visibility="visible"
                 android:padding="16dp" />
+
             <Button
                 android:id="@+id/activity_tutorial_done"
                 android:layout_width="match_parent"
@@ -81,12 +77,12 @@
                 android:fontFamily="sans-serif"
                 android:gravity="center"
                 android:text="@string/tutorial_done"
-                android:textColor="@color/tutorial_buttonTextColor"
+                android:textColor="@color/tutorial_buttonText"
                 android:textSize="18sp"
                 android:visibility="gone" />
+
         </LinearLayout>
 
     </LinearLayout>
-
 
 </RelativeLayout>

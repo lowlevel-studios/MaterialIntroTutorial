@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="tutorial_buttonTextColor">#ffffff</color>
-    <color name="tutorial_subtitleTextColor">#ffffff</color>
-    <color name="tutorial_titleTextColor">#ffffff</color>
+    <bool name="default_circle_indicator_centered">true</bool>
+    <color name="default_circle_indicator_fill_color">#FFFFFFFF</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    <integer name="default_circle_indicator_orientation">0</integer>
+    <dimen name="default_circle_indicator_radius">3dp</dimen>
+    <bool name="default_circle_indicator_snap">false</bool>
+    <color name="default_circle_indicator_stroke_color">#FFDDDDDD</color>
+    <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
+
+    <color name="tutorial_buttonText">#ffffff</color>
+    <color name="tutorial_separator">#e0e0e0</color>
+    <color name="tutorial_subtitleText">#ffffff</color>
+    <color name="tutorial_titleText">#ffffff</color>
 </resources>
