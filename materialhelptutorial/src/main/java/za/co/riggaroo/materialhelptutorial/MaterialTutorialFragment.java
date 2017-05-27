@@ -64,13 +64,13 @@ public class MaterialTutorialFragment extends Fragment {
             textViewSubTitle.setText(tutorialItem.getSubTitleTextRes());
         }
         if (tutorialItem.getBackgroundImageRes() != -1) {
-            Glide.with(this).load(tutorialItem.getBackgroundImageRes()).into(imageViewBack);
+            Glide.with(this).load(tutorialItem.getBackgroundImageRes()).dontAnimate().into(imageViewBack);
         }
         if (tutorialItem.getForegroundImageRes() != -1 && !tutorialItem.isGif()) {
-            Glide.with(this).load(tutorialItem.getForegroundImageRes()).into(imageViewFront);
+            Glide.with(this).load(tutorialItem.getForegroundImageRes()).dontAnimate().into(imageViewFront);
         }
         if (tutorialItem.getForegroundImageRes() != -1 && tutorialItem.isGif()){
-            Glide.with(this).load(tutorialItem.getForegroundImageRes()).asGif().diskCacheStrategy(DiskCacheStrategy.SOURCE).into(imageViewFront);
+            Glide.with(this).load(tutorialItem.getForegroundImageRes()).asGif().diskCacheStrategy(DiskCacheStrategy.SOURCE).dontAnimate().into(imageViewFront);
         }
         return v;
     }
