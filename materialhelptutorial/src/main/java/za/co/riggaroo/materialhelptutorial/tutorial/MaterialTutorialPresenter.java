@@ -2,16 +2,13 @@ package za.co.riggaroo.materialhelptutorial.tutorial;
 
 import android.animation.ArgbEvaluator;
 import android.content.Context;
-import android.os.Build;
-import android.support.v4.content.ContextCompat;
-import android.util.Log;
 import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.core.content.ContextCompat;
 import za.co.riggaroo.materialhelptutorial.MaterialTutorialFragment;
-import za.co.riggaroo.materialhelptutorial.R;
 import za.co.riggaroo.materialhelptutorial.TutorialItem;
 
 /**

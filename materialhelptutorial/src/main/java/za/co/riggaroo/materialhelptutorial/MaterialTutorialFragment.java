@@ -1,7 +1,6 @@
 package za.co.riggaroo.materialhelptutorial;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +11,8 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.RequestOptions;
+
+import androidx.fragment.app.Fragment;
 
 /**
  * @author rebeccafranks
